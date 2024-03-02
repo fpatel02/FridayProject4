@@ -47,3 +47,44 @@ Calling the function:
 winning_numbers, powerball_number = generate_powerball_numbers(): We call the generate_powerball_numbers() function and store the returned results (numbers and Powerball) in two separate variables.
 Printing results:
 We use print() statements to display the winning numbers in a user-friendly format, separating the regular numbers and the Powerball number.
+
+The steps of the code for Friday Project 3 are as follows:
+    import random: We import the random module to randomly select questions.
+
+Sample questions:
+
+We define a dictionary named questions to store tossup and bonus questions.
+You can expand these dictionaries with more questions and categories.
+Difficulty levels (optional):
+
+We define a list difficulty_levels (commented out) to add difficulty options.
+You can modify this to adjust question selection based on difficulty.
+Welcome message: We print a welcome message to the user.
+
+Difficulty selection (optional): (Commented out)
+
+We prompt the user to choose a difficulty level using input().
+You can add logic to select questions based on the chosen difficulty.
+Random question type:
+
+We convert the questions dictionary keys to a list using list(questions.keys()).
+We use random.choice() to pick a random question type ("tossup" or "bonus").
+Random question selection:
+
+We access the chosen question type in the questions dictionary.
+We use random.choice() again to pick a random question from that list.
+Print the question:
+
+We format the output using f-strings to display the question type and the actual question.
+User answer:
+
+We use input() to get the user's answer.
+Simple answer check (replace with more robust logic):
+
+We perform a basic check for a specific answer ("Paris" for the tossup example).
+In a real quiz bowl, you'd need a more sophisticated answer checking system.
+Print feedback:
+We display a message based on whether the answer was correct.
+Print answer (for demonstration, remove in a real quiz bowl):
+We print the actual answer from the question list (for demonstration purposes). This should be removed in a real quiz bowl setting.
+End message: We thank the user for playing.
